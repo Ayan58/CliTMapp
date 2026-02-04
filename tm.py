@@ -8,6 +8,6 @@ def task_load():
         return []
 
 def save_task(tasks):
-    with open(task_file, "r") as file:
-        for i in tasks:
-            file.write(i)
+    with open(task_file, "w") as file:
+        for task in tasks:
+            file.write(task + "\n")
