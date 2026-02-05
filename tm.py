@@ -13,5 +13,10 @@ def save_task(tasks):
             file.write(task + "\n")
 
 def display_task(tasks):
+
+    if not tasks:
+        print("Nothing to show.")
+        return 
+    
     for i, task in enumerate(tasks, start=1):
         print(f"{i}: {task}")
