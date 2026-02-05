@@ -13,5 +13,5 @@ def save_task(tasks):
             file.write(task + "\n")
 
 def display_task(tasks):
-    for i, task in enumerate(tasks):
+    for i, task in enumerate(tasks, start=1):
         print(f"{i}: {task}")
