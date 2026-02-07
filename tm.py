@@ -20,3 +20,13 @@ def display_task(tasks):
     
     for i, task in enumerate(tasks, start=1):
         print(f"{i}: {task}")
+
+def features():
+    tasks = task_load()
+
+    while True:
+
+        print("1. Insert task.")
+        print("2. Delete task.")
+        print("3. View task.")
+        print("4. Exit.")
